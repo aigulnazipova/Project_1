@@ -29,10 +29,11 @@
         private void InitializeComponent()
         {
             this.adminAccountButton = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnStudyGroup = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
+            this.btnReturnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // adminAccountButton
@@ -48,17 +49,18 @@
             this.adminAccountButton.UseVisualStyleBackColor = false;
             this.adminAccountButton.Click += new System.EventHandler(this.adminAccountButton_Click);
             // 
-            // button2
+            // btnStudyGroup
             // 
-            this.button2.BackColor = System.Drawing.Color.RosyBrown;
-            this.button2.Font = new System.Drawing.Font("Sitka Small", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.ForeColor = System.Drawing.SystemColors.Window;
-            this.button2.Location = new System.Drawing.Point(57, 194);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(370, 63);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Учебные группы";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnStudyGroup.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnStudyGroup.Font = new System.Drawing.Font("Sitka Small", 16.2F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnStudyGroup.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnStudyGroup.Location = new System.Drawing.Point(57, 194);
+            this.btnStudyGroup.Name = "btnStudyGroup";
+            this.btnStudyGroup.Size = new System.Drawing.Size(370, 63);
+            this.btnStudyGroup.TabIndex = 1;
+            this.btnStudyGroup.Text = "Учебные группы";
+            this.btnStudyGroup.UseVisualStyleBackColor = false;
+            this.btnStudyGroup.Click += new System.EventHandler(this.btnStudyGroup_Click);
             // 
             // button3
             // 
@@ -99,6 +101,19 @@
             this.closeButton.UseVisualStyleBackColor = false;
             this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
+            // btnReturnBack
+            // 
+            this.btnReturnBack.BackColor = System.Drawing.Color.Firebrick;
+            this.btnReturnBack.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnReturnBack.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnReturnBack.Location = new System.Drawing.Point(349, -1);
+            this.btnReturnBack.Name = "btnReturnBack";
+            this.btnReturnBack.Size = new System.Drawing.Size(94, 34);
+            this.btnReturnBack.TabIndex = 5;
+            this.btnReturnBack.Text = "Назад";
+            this.btnReturnBack.UseVisualStyleBackColor = false;
+            this.btnReturnBack.Click += new System.EventHandler(this.btnReturnBack_Click);
+            // 
             // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -106,10 +121,11 @@
             this.BackColor = System.Drawing.SystemColors.Window;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(483, 590);
+            this.Controls.Add(this.btnReturnBack);
             this.Controls.Add(this.closeButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnStudyGroup);
             this.Controls.Add(this.adminAccountButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminForm";
@@ -121,9 +137,10 @@
         #endregion
 
         private System.Windows.Forms.Button adminAccountButton;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnStudyGroup;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button closeButton;
+        private System.Windows.Forms.Button btnReturnBack;
     }
 }

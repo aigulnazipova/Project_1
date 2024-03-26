@@ -15,6 +15,7 @@ namespace StudentDiary
         public AdminForm()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -28,6 +29,20 @@ namespace StudentDiary
             adminAccountForm.Show();
             this.Hide();
 
+        }
+
+        private void btnStudyGroup_Click(object sender, EventArgs e)
+        {
+            StudyGroupForm studyGroupForm = new StudyGroupForm();
+            studyGroupForm.Show();
+            this.Close();
+        }
+
+        private void btnReturnBack_Click(object sender, EventArgs e)
+        {
+            LoginForm loginForm = new LoginForm();
+            loginForm.Show();
+            this.Close();
         }
     }
 }

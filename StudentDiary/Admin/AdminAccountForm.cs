@@ -20,6 +20,7 @@ namespace StudentDiary
         {
             db = new DataBase();
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void closeButton_Click(object sender, EventArgs e)
@@ -68,6 +69,11 @@ namespace StudentDiary
             }
         }
 
-
+        private void btnReturnBack_Click(object sender, EventArgs e)
+        {
+            AdminForm adminForm = new AdminForm();
+            adminForm.Show();
+            this.Close();
+        }
     }
 }

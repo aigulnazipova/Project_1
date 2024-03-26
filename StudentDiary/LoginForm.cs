@@ -16,6 +16,7 @@ namespace StudentDiary
         public LoginForm()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
 
             this.passField.AutoSize = false;
             this.passField.Size = new Size(this.passField.Width, 36);

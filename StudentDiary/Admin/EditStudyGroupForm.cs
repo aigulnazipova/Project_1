@@ -10,11 +10,12 @@ using System.Windows.Forms;
 
 namespace StudentDiary
 {
-    public partial class StudentForm : Form
+    public partial class EditStudyGroupForm : Form
     {
-        public StudentForm()
+        public EditStudyGroupForm()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
     }
 }

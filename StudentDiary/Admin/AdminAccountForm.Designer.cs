@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AdminAccountForm));
             this.btnLastName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,16 +44,10 @@
             this.closeButton = new System.Windows.Forms.Button();
             this.btnBirthDate = new System.Windows.Forms.TextBox();
             this.btnSaveChanges = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnReturnBack = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // textBox1
-            // 
-            this.textBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(224)))), ((int)(((byte)(215)))));
-            this.textBox1.Location = new System.Drawing.Point(222, 12);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(551, 84);
-            this.textBox1.TabIndex = 0;
             // 
             // btnLastName
             // 
@@ -116,7 +110,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(347, 99);
+            this.label4.Location = new System.Drawing.Point(325, 99);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(287, 29);
             this.label4.TabIndex = 7;
@@ -207,11 +201,37 @@
             this.btnSaveChanges.Text = "Сохранить изменения";
             this.btnSaveChanges.UseVisualStyleBackColor = false;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(224)))), ((int)(((byte)(215)))));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(227, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(481, 84);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btnReturnBack
+            // 
+            this.btnReturnBack.BackColor = System.Drawing.Color.Firebrick;
+            this.btnReturnBack.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnReturnBack.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnReturnBack.Location = new System.Drawing.Point(810, 0);
+            this.btnReturnBack.Name = "btnReturnBack";
+            this.btnReturnBack.Size = new System.Drawing.Size(104, 34);
+            this.btnReturnBack.TabIndex = 18;
+            this.btnReturnBack.Text = "Назад";
+            this.btnReturnBack.UseVisualStyleBackColor = false;
+            this.btnReturnBack.Click += new System.EventHandler(this.btnReturnBack_Click);
+            // 
             // AdminAccountForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(952, 602);
+            this.Controls.Add(this.btnReturnBack);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSaveChanges);
             this.Controls.Add(this.btnBirthDate);
             this.Controls.Add(this.closeButton);
@@ -227,18 +247,16 @@
             this.Controls.Add(this.btnFirstName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLastName);
-            this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "AdminAccountForm";
             this.Text = "AdminAccountForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox btnLastName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
@@ -254,5 +272,7 @@
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.TextBox btnBirthDate;
         private System.Windows.Forms.Button btnSaveChanges;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btnReturnBack;
     }
 }
