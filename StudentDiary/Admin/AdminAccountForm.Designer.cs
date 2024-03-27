@@ -41,7 +41,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnPhoneNumber = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.closeButton = new System.Windows.Forms.Button();
             this.btnBirthDate = new System.Windows.Forms.TextBox();
             this.btnSaveChanges = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -164,21 +163,6 @@
             this.label7.TabIndex = 9;
             this.label7.Text = "Дата рождения";
             // 
-            // closeButton
-            // 
-            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.BackColor = System.Drawing.Color.Brown;
-            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeButton.Font = new System.Drawing.Font("Marlett", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.closeButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.closeButton.Location = new System.Drawing.Point(920, 0);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(34, 35);
-            this.closeButton.TabIndex = 14;
-            this.closeButton.Text = "X";
-            this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
             // btnBirthDate
             // 
             this.btnBirthDate.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(224)))), ((int)(((byte)(215)))));
@@ -214,12 +198,12 @@
             // 
             // btnReturnBack
             // 
-            this.btnReturnBack.BackColor = System.Drawing.Color.Firebrick;
+            this.btnReturnBack.BackColor = System.Drawing.Color.IndianRed;
             this.btnReturnBack.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnReturnBack.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnReturnBack.Location = new System.Drawing.Point(810, 0);
+            this.btnReturnBack.Location = new System.Drawing.Point(855, 2);
             this.btnReturnBack.Name = "btnReturnBack";
-            this.btnReturnBack.Size = new System.Drawing.Size(104, 34);
+            this.btnReturnBack.Size = new System.Drawing.Size(96, 33);
             this.btnReturnBack.TabIndex = 18;
             this.btnReturnBack.Text = "Назад";
             this.btnReturnBack.UseVisualStyleBackColor = false;
@@ -234,7 +218,6 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btnSaveChanges);
             this.Controls.Add(this.btnBirthDate);
-            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.btnEmail);
             this.Controls.Add(this.label6);
@@ -247,7 +230,7 @@
             this.Controls.Add(this.btnFirstName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnLastName);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AdminAccountForm";
             this.Text = "AdminAccountForm";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -269,7 +252,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox btnPhoneNumber;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.TextBox btnBirthDate;
         private System.Windows.Forms.Button btnSaveChanges;
         private System.Windows.Forms.PictureBox pictureBox1;

@@ -36,7 +36,8 @@
             this.cbGroupNumber = new System.Windows.Forms.ComboBox();
             this.dgwStudyGroupInfo = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.btnCloseStudyGroupForm = new System.Windows.Forms.Button();
+            this.btnDelete = new System.Windows.Forms.Button();
+            this.btnCreateStudent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudyGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwStudyGroupInfo)).BeginInit();
             this.SuspendLayout();
@@ -122,33 +123,45 @@
             this.button1.BackColor = System.Drawing.Color.RosyBrown;
             this.button1.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(39, 561);
+            this.button1.Location = new System.Drawing.Point(25, 561);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(230, 50);
+            this.button1.Size = new System.Drawing.Size(254, 50);
             this.button1.TabIndex = 8;
             this.button1.Text = "Внести изменения";
             this.button1.UseVisualStyleBackColor = false;
             // 
-            // btnCloseStudyGroupForm
+            // btnDelete
             // 
-            this.btnCloseStudyGroupForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnCloseStudyGroupForm.BackColor = System.Drawing.Color.RosyBrown;
-            this.btnCloseStudyGroupForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnCloseStudyGroupForm.Font = new System.Drawing.Font("Marlett", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnCloseStudyGroupForm.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnCloseStudyGroupForm.Location = new System.Drawing.Point(1343, 0);
-            this.btnCloseStudyGroupForm.Name = "btnCloseStudyGroupForm";
-            this.btnCloseStudyGroupForm.Size = new System.Drawing.Size(34, 35);
-            this.btnCloseStudyGroupForm.TabIndex = 10;
-            this.btnCloseStudyGroupForm.Text = "X";
-            this.btnCloseStudyGroupForm.UseVisualStyleBackColor = false;
+            this.btnDelete.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnDelete.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnDelete.Location = new System.Drawing.Point(25, 505);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Size = new System.Drawing.Size(254, 50);
+            this.btnDelete.TabIndex = 13;
+            this.btnDelete.Text = "Удалить студента";
+            this.btnDelete.UseVisualStyleBackColor = false;
+            // 
+            // btnCreateStudent
+            // 
+            this.btnCreateStudent.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnCreateStudent.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCreateStudent.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnCreateStudent.Location = new System.Drawing.Point(25, 447);
+            this.btnCreateStudent.Name = "btnCreateStudent";
+            this.btnCreateStudent.Size = new System.Drawing.Size(254, 52);
+            this.btnCreateStudent.TabIndex = 14;
+            this.btnCreateStudent.Text = "Добавить студента";
+            this.btnCreateStudent.UseVisualStyleBackColor = false;
+            this.btnCreateStudent.Click += new System.EventHandler(this.btnCreateStudent_Click);
             // 
             // StudyGroupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 638);
-            this.Controls.Add(this.btnCloseStudyGroupForm);
+            this.Controls.Add(this.btnCreateStudent);
+            this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dgwStudyGroupInfo);
             this.Controls.Add(this.txtbChooseGroupNumber);
@@ -156,9 +169,9 @@
             this.Controls.Add(this.txtbChooseFaculty);
             this.Controls.Add(this.cbFaculty);
             this.Controls.Add(this.pbStudyGroup);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StudyGroupForm";
-            this.Text = "StudyGroupForm";
+            this.Text = "Учебные группы";
             this.Load += new System.EventHandler(this.StudyGroupForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbStudyGroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwStudyGroupInfo)).EndInit();
@@ -176,6 +189,7 @@
         private System.Windows.Forms.ComboBox cbGroupNumber;
         private System.Windows.Forms.DataGridView dgwStudyGroupInfo;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btnCloseStudyGroupForm;
+        private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Button btnCreateStudent;
     }
 }

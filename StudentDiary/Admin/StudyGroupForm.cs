@@ -1,4 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
+using StudentDiary.Admin;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -32,7 +33,7 @@ namespace StudentDiary
             string query = "SELECT * FROM student_users";
             if (db.MySqlReturnData(query, dgwStudyGroupInfo) != null)
             {
-                MessageBox.Show("Запрос успешно выполнен!", "Успех", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("Запрос успешно выполнен!", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
         private void CreateColumns()
@@ -122,6 +123,12 @@ namespace StudentDiary
                 string selectedFaculty = cbFaculty.SelectedItem.ToString();
                 RefreshDataGridFiltered(selectedGroupNumber, selectedFaculty, dgwStudyGroupInfo);
             }
+        }
+
+        private void btnCreateStudent_Click(object sender, EventArgs e)
+        {
+            AddStudentForm addStudentForm = new AddStudentForm();
+            addStudentForm.Show();
         }
     }
 }

@@ -32,7 +32,6 @@
             this.btnStudyGroup = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
             this.btnReturnBack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -86,27 +85,12 @@
             this.button4.Text = "Выставить баллы";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // closeButton
-            // 
-            this.closeButton.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.closeButton.BackColor = System.Drawing.Color.Brown;
-            this.closeButton.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.closeButton.Font = new System.Drawing.Font("Marlett", 13F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.closeButton.ForeColor = System.Drawing.SystemColors.Window;
-            this.closeButton.Location = new System.Drawing.Point(449, -1);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(34, 35);
-            this.closeButton.TabIndex = 4;
-            this.closeButton.Text = "X";
-            this.closeButton.UseVisualStyleBackColor = false;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
             // btnReturnBack
             // 
-            this.btnReturnBack.BackColor = System.Drawing.Color.Firebrick;
+            this.btnReturnBack.BackColor = System.Drawing.Color.IndianRed;
             this.btnReturnBack.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnReturnBack.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnReturnBack.Location = new System.Drawing.Point(349, -1);
+            this.btnReturnBack.Location = new System.Drawing.Point(389, 1);
             this.btnReturnBack.Name = "btnReturnBack";
             this.btnReturnBack.Size = new System.Drawing.Size(94, 34);
             this.btnReturnBack.TabIndex = 5;
@@ -122,12 +106,11 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ClientSize = new System.Drawing.Size(483, 590);
             this.Controls.Add(this.btnReturnBack);
-            this.Controls.Add(this.closeButton);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnStudyGroup);
             this.Controls.Add(this.adminAccountButton);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AdminForm";
             this.Text = "AdminForm";
             this.ResumeLayout(false);
@@ -140,7 +123,6 @@
         private System.Windows.Forms.Button btnStudyGroup;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Button btnReturnBack;
     }
 }

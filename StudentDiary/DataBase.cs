@@ -43,6 +43,13 @@ namespace StudentDiary
         {
             return connection;
         }
+        public void closeConnection()
+        {
+            if (connection.State == ConnectionState.Open)
+            {
+                connection.Close();
+            }
+        }
 
         public string StringConMySql = @"server=localhost;port=3306;username=root;password=root;database=studentdiary";
 
