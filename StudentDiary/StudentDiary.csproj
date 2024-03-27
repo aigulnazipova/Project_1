@@ -116,6 +116,12 @@
     <Compile Include="Admin\AdminForm.Designer.cs">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Admin\GiveGradeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\GiveGradeForm.Designer.cs">
+      <DependentUpon>GiveGradeForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Admin\ScheduleAdminForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -132,11 +138,23 @@
     <Compile Include="PersonalData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\AboutClassForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\AboutClassForm.Designer.cs">
+      <DependentUpon>AboutClassForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\ScheduleStudentForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Student\ScheduleStudentForm.Designer.cs">
       <DependentUpon>ScheduleStudentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Student\StudentAccountForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\StudentAccountForm.Designer.cs">
+      <DependentUpon>StudentAccountForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\StudentForm.cs">
       <SubType>Form</SubType>
@@ -191,9 +209,13 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Техническое задание\ТЗ Команда12.docx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB server\studentdiary.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

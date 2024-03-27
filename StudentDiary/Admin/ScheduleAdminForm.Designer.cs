@@ -32,11 +32,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgwAdminScheduleInfo)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgwScheduleInfo
+            // dgwAdminScheduleInfo
             // 
             this.dgwAdminScheduleInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwAdminScheduleInfo.Location = new System.Drawing.Point(96, 56);
-            this.dgwAdminScheduleInfo.Name = "dgwScheduleInfo";
+            this.dgwAdminScheduleInfo.Location = new System.Drawing.Point(62, 73);
+            this.dgwAdminScheduleInfo.Name = "dgwAdminScheduleInfo";
             this.dgwAdminScheduleInfo.RowHeadersWidth = 51;
             this.dgwAdminScheduleInfo.RowTemplate.Height = 24;
             this.dgwAdminScheduleInfo.Size = new System.Drawing.Size(681, 374);
@@ -48,8 +48,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgwAdminScheduleInfo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ScheduleAdminForm";
-            this.Text = "ScheduleAdminForm";
+            this.Text = "Расписание";
             this.Load += new System.EventHandler(this.ScheduleAdminForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwAdminScheduleInfo)).EndInit();
             this.ResumeLayout(false);
