@@ -112,7 +112,6 @@
             this.Controls.Add(this.adminAccountButton);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "AdminForm";
-            this.Text = "AdminForm";
             this.ResumeLayout(false);
 
         }

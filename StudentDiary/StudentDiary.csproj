@@ -177,6 +177,9 @@
     <EmbeddedResource Include="Admin\AdminForm.resx">
       <DependentUpon>AdminForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Admin\GiveGradeForm.resx">
+      <DependentUpon>GiveGradeForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Admin\ScheduleAdminForm.resx">
       <DependentUpon>ScheduleAdminForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -191,8 +194,17 @@
     <EmbeddedResource Include="Admin\StudyGroupForm.resx">
       <DependentUpon>StudyGroupForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student\AboutClassForm.resx">
+      <DependentUpon>AboutClassForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Student\ScheduleStudentForm.resx">
       <DependentUpon>ScheduleStudentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentAccountForm.resx">
+      <DependentUpon>StudentAccountForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\StudentForm.resx">
+      <DependentUpon>StudentForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

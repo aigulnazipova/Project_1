@@ -9,14 +9,13 @@ namespace StudentDiary
 {
     internal class PersonalData
     {
-        public static int IdUser { get; private set; }
-        public static string Password { get; private set; }
-        public static string Login { get; private set; }
-        public static string LastName { get; private set; }
-        public static string FirstName { get; private set; }
-        public static string FatherName { get; private set; }
-        public static string DateBrth { get; private set; }
-        public static string NumberTel { get; private set; }
+        
+        public static string Login {  get; set; }
+        public static string LastName { get; set; }
+        public static string FirstName { get; set; }
+        public static string Patronymic { get; set; }
+        public static string DateBrth { get; set; }
+        public static string NumberTel { get; set; }
 
         public bool SetPersonalData(string login, string password)
         {
@@ -37,13 +36,10 @@ namespace StudentDiary
                     {
                         if (reader.Read())
                         {
-                            IdUser = Convert.ToInt32(reader["id_user"]);
-                            Login = reader["login"].ToString();
-                            Password = reader["password"].ToString();
                             NumberTel = reader["phone_number"].ToString();
                             FirstName = reader["first_name"].ToString();
                             LastName = reader["last_name"].ToString();
-                            FatherName = reader["patronymic"].ToString();
+                            Patronymic = reader["patronymic"].ToString();
                             DateBrth = reader.GetDateTime(reader.GetOrdinal("birth_date")).ToString("yyyy-MM-dd");
                             return true;
                         }

@@ -35,11 +35,12 @@
             // dgwStudentScheduleInfo
             // 
             this.dgwStudentScheduleInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwStudentScheduleInfo.Location = new System.Drawing.Point(66, 65);
+            this.dgwStudentScheduleInfo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgwStudentScheduleInfo.Location = new System.Drawing.Point(0, 0);
             this.dgwStudentScheduleInfo.Name = "dgwStudentScheduleInfo";
             this.dgwStudentScheduleInfo.RowHeadersWidth = 51;
             this.dgwStudentScheduleInfo.RowTemplate.Height = 24;
-            this.dgwStudentScheduleInfo.Size = new System.Drawing.Size(674, 353);
+            this.dgwStudentScheduleInfo.Size = new System.Drawing.Size(800, 450);
             this.dgwStudentScheduleInfo.TabIndex = 0;
             // 
             // ScheduleStudentForm
@@ -48,8 +49,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dgwStudentScheduleInfo);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ScheduleStudentForm";
-            this.Text = "ScheduleStudentForm";
+            this.Text = "Расписание";
             ((System.ComponentModel.ISupportInitialize)(this.dgwStudentScheduleInfo)).EndInit();
             this.ResumeLayout(false);
 

@@ -34,19 +34,20 @@
             // 
             // dgwAdminScheduleInfo
             // 
+            this.dgwAdminScheduleInfo.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgwAdminScheduleInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwAdminScheduleInfo.Location = new System.Drawing.Point(62, 73);
+            this.dgwAdminScheduleInfo.Location = new System.Drawing.Point(0, 85);
             this.dgwAdminScheduleInfo.Name = "dgwAdminScheduleInfo";
             this.dgwAdminScheduleInfo.RowHeadersWidth = 51;
             this.dgwAdminScheduleInfo.RowTemplate.Height = 24;
-            this.dgwAdminScheduleInfo.Size = new System.Drawing.Size(681, 374);
+            this.dgwAdminScheduleInfo.Size = new System.Drawing.Size(719, 471);
             this.dgwAdminScheduleInfo.TabIndex = 0;
             // 
             // ScheduleAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(719, 556);
             this.Controls.Add(this.dgwAdminScheduleInfo);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ScheduleAdminForm";

@@ -16,5 +16,6 @@ namespace StudentDiary.Admin
         {
             InitializeComponent();
         }
+
     }
 }

@@ -171,7 +171,6 @@
             this.Controls.Add(this.pbStudyGroup);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StudyGroupForm";
-            this.Text = "Учебные группы";
             this.Load += new System.EventHandler(this.StudyGroupForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbStudyGroup)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwStudyGroupInfo)).EndInit();

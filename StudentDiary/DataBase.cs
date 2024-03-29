@@ -39,6 +39,13 @@ namespace StudentDiary
                 return null;
             }
         }
+        public void openConnection()
+        {
+            if (connection.State == System.Data.ConnectionState.Closed) 
+            {
+                connection.Open();
+            }
+        }
         public MySqlConnection getConnection()
         {
             return connection;

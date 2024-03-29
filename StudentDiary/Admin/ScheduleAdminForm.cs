@@ -25,7 +25,7 @@ namespace StudentDiary.Admin
             dgwAdminScheduleInfo.Columns.Add("group_number", "Номер группы");
             dgwAdminScheduleInfo.Columns.Add("faculty", "Направление");
             dgwAdminScheduleInfo.Columns.Add("week_day", "День недели");
-            dgwAdminScheduleInfo.Columns.Add("Class_number", "Номер пары");
+            dgwAdminScheduleInfo.Columns.Add("class_number", "Номер пары");
             dgwAdminScheduleInfo.Columns.Add("subject", "Предмет");
         }
         private void ReadSingleRow(DataGridView dgw, IDataRecord record)
