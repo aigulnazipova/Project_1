@@ -35,7 +35,7 @@
             this.txtbChooseGroupNumber = new System.Windows.Forms.TextBox();
             this.cbGroupNumber = new System.Windows.Forms.ComboBox();
             this.dgwStudyGroupInfo = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnChangeInfo = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnCreateStudent = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudyGroup)).BeginInit();
@@ -118,17 +118,17 @@
             this.dgwStudyGroupInfo.Size = new System.Drawing.Size(1073, 536);
             this.dgwStudyGroupInfo.TabIndex = 7;
             // 
-            // button1
+            // btnChangeInfo
             // 
-            this.button1.BackColor = System.Drawing.Color.RosyBrown;
-            this.button1.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(25, 561);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(254, 50);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Внести изменения";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnChangeInfo.BackColor = System.Drawing.Color.RosyBrown;
+            this.btnChangeInfo.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnChangeInfo.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnChangeInfo.Location = new System.Drawing.Point(25, 561);
+            this.btnChangeInfo.Name = "btnChangeInfo";
+            this.btnChangeInfo.Size = new System.Drawing.Size(254, 50);
+            this.btnChangeInfo.TabIndex = 8;
+            this.btnChangeInfo.Text = "Внести изменения";
+            this.btnChangeInfo.UseVisualStyleBackColor = false;
             // 
             // btnDelete
             // 
@@ -162,7 +162,7 @@
             this.ClientSize = new System.Drawing.Size(1377, 638);
             this.Controls.Add(this.btnCreateStudent);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnChangeInfo);
             this.Controls.Add(this.dgwStudyGroupInfo);
             this.Controls.Add(this.txtbChooseGroupNumber);
             this.Controls.Add(this.cbGroupNumber);
@@ -187,7 +187,7 @@
         private System.Windows.Forms.TextBox txtbChooseGroupNumber;
         private System.Windows.Forms.ComboBox cbGroupNumber;
         private System.Windows.Forms.DataGridView dgwStudyGroupInfo;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnChangeInfo;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCreateStudent;
     }

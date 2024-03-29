@@ -34,13 +34,13 @@
             // 
             // dgwStudentScheduleInfo
             // 
+            this.dgwStudentScheduleInfo.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgwStudentScheduleInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwStudentScheduleInfo.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgwStudentScheduleInfo.Location = new System.Drawing.Point(0, 0);
+            this.dgwStudentScheduleInfo.Location = new System.Drawing.Point(12, 31);
             this.dgwStudentScheduleInfo.Name = "dgwStudentScheduleInfo";
             this.dgwStudentScheduleInfo.RowHeadersWidth = 51;
             this.dgwStudentScheduleInfo.RowTemplate.Height = 24;
-            this.dgwStudentScheduleInfo.Size = new System.Drawing.Size(800, 450);
+            this.dgwStudentScheduleInfo.Size = new System.Drawing.Size(753, 386);
             this.dgwStudentScheduleInfo.TabIndex = 0;
             // 
             // ScheduleStudentForm

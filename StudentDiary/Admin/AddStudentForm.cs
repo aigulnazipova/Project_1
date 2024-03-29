@@ -23,13 +23,13 @@ namespace StudentDiary.Admin
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            db.getConnection();
+            db.openConnection();
 
             var last_name = tbLastName.Text;
             var first_name = tbFirstName.Text;
             var patronymic = tbPatronymic.Text;
-            DateTime birth_Date;
-            if (!DateTime.TryParse(tbBirthDate.Text, out birth_Date))
+            DateTime birth_date;
+            if (!DateTime.TryParse(tbBirthDate.Text, out birth_date))
             {
                 MessageBox.Show("Некорректный формат даты рождения!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 db.closeConnection();
@@ -52,13 +52,13 @@ namespace StudentDiary.Admin
                 db.closeConnection();
                 return;
             }
-            string connectionString = "server=localhost;port=3306;user=root;password=root;database=studentdiary";
+            
             string queryString = "INSERT INTO student_users (last_name, first_name, patronymic, birth_date, phone_number, email, faculty, group_number) VALUES (@last_name, @first_name, @patronymic, @birth_date, @phone_number, @email, @faculty, @group_number)";
             MySqlCommand command = new MySqlCommand(queryString, db.getConnection());
             command.Parameters.Add("@last_name", MySqlDbType.VarChar).Value = last_name;
             command.Parameters.Add("@first_name", MySqlDbType.VarChar).Value = first_name;
             command.Parameters.Add("@patronymic", MySqlDbType.VarChar).Value = patronymic;
-            command.Parameters.Add("@birth_Date", MySqlDbType.Date).Value = birth_Date;
+            command.Parameters.Add("@birth_date", MySqlDbType.Date).Value = birth_date;
             command.Parameters.Add("@phone_number", MySqlDbType.Int32).Value = phone_number;
             command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
             command.Parameters.Add("@faculty", MySqlDbType.VarChar).Value = faculty;
