@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: localhost:3306
--- Время создания: Мар 27 2024 г., 20:04
+-- Время создания: Мар 29 2024 г., 16:03
 -- Версия сервера: 5.7.24
 -- Версия PHP: 8.0.1
 
@@ -24,6 +24,29 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+-- Структура таблицы `about_classes`
+--
+
+CREATE TABLE `about_classes` (
+  `ID` int(11) NOT NULL,
+  `subject_name` varchar(100) NOT NULL COMMENT 'Название',
+  `format` varchar(100) NOT NULL COMMENT 'Формат',
+  `info` varchar(1000) NOT NULL COMMENT 'Информация'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Дамп данных таблицы `about_classes`
+--
+
+INSERT INTO `about_classes` (`ID`, `subject_name`, `format`, `info`) VALUES
+(1, 'Алгебра и геометрия', 'Лекция', 'Преподаватель: Карчевский Е.М. Количество учебных часов:54. Зачет:+. Экзамен:+'),
+(2, 'Алгебра и геометрия', 'Семинар', 'Преподаватели: Гиниятова Д.Х., Александрова И.Л. Количество учебных часов:54\r\n\r\n'),
+(3, 'Математический анализ', 'Лекция', 'Преподаватель: Сидоров А.М. Количество учебных часов:54. Зачет:+. Экзамен:+'),
+(4, 'Математический анализ', 'Семинар', 'Преподаватели: Сидоров А.М., Тумаков М.Д.. Количество учебных часов:54');
+
+-- --------------------------------------------------------
+
+--
 -- Структура таблицы `admin_users`
 --
 
@@ -33,7 +56,7 @@ CREATE TABLE `admin_users` (
   `first_name` varchar(50) NOT NULL COMMENT 'Имя',
   `patronymic` varchar(50) NOT NULL COMMENT 'Отчество',
   `birth_date` date NOT NULL COMMENT 'Дата рождения',
-  `phone_number` int(11) NOT NULL COMMENT 'Номер телефона',
+  `phone_number` bigint(11) NOT NULL COMMENT 'Номер телефона',
   `email` varchar(100) NOT NULL COMMENT 'Почта'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
@@ -42,8 +65,7 @@ CREATE TABLE `admin_users` (
 --
 
 INSERT INTO `admin_users` (`id_user`, `last_name`, `first_name`, `patronymic`, `birth_date`, `phone_number`, `email`) VALUES
-(1, 'Смирнова', 'Марина', 'Александровна', '1993-09-02', 0, 'marinasmirnova@kpfu.ru'),
-(2, 'Соколов', 'Никита', 'Андреевич', '2003-11-20', 0, 'nikita.sokolov@kpfu.ru');
+(1, 'Смирнова', 'Марина', 'Александровна', '1993-09-02', 89101060645, 'marinasmirnova@kpfu.ru');
 
 -- --------------------------------------------------------
 
@@ -71,7 +93,7 @@ CREATE TABLE `student_users` (
   `first_name` varchar(50) NOT NULL COMMENT 'Имя',
   `patronymic` varchar(50) NOT NULL COMMENT 'Отчество',
   `birth_date` date NOT NULL COMMENT 'Дата рождения',
-  `phone_number` int(20) NOT NULL COMMENT 'Номер телефона',
+  `phone_number` bigint(11) NOT NULL COMMENT 'Номер телефона',
   `email` varchar(150) NOT NULL COMMENT 'Почта',
   `faculty` varchar(350) NOT NULL COMMENT 'Направление',
   `group_number` int(11) NOT NULL COMMENT 'Номер группы'
@@ -82,10 +104,10 @@ CREATE TABLE `student_users` (
 --
 
 INSERT INTO `student_users` (`student_id`, `last_name`, `first_name`, `patronymic`, `birth_date`, `phone_number`, `email`, `faculty`, `group_number`) VALUES
-(2, 'Соколов', 'Никита', 'Андреевич', '2003-11-20', 897654334, 'nikita.sokolov@kpfu.ru', 'Прикладная математика', 9321),
-(3, 'Пашина', 'Алена', 'Вадимовна', '2004-12-23', 897653322, 'alenapashina@kpfu.ru', 'Бизнес информатика', 9301),
-(4, 'Бекер', 'Диана', 'Никитична', '2004-07-01', 865428196, 'beker.diana@kpfu.ru', 'Прикладная математика', 9322),
-(5, 'Иванов', 'Сергей', 'Иванович', '2004-05-18', 876543222, 'sergeivanov@kpfu.ru', 'Прикладная информатика', 9311);
+(2, 'Соколов', 'Никита', 'Андреевич', '2003-11-20', 89765433423, 'nikita.sokolov@kpfu.ru', 'Прикладная математика', 9321),
+(3, 'Пашина', 'Алена', 'Вадимовна', '2004-12-23', 89765332209, 'alenapashina@kpfu.ru', 'Бизнес информатика', 9301),
+(4, 'Бекер', 'Диана', 'Никитична', '2004-07-01', 86542819698, 'beker.diana@kpfu.ru', 'Прикладная математика', 9322),
+(5, 'Иванов', 'Сергей', 'Иванович', '2004-05-18', 87654322267, 'sergeivanov@kpfu.ru', 'Прикладная информатика', 9311);
 
 -- --------------------------------------------------------
 
@@ -116,6 +138,12 @@ INSERT INTO `users` (`role`, `id`, `login`, `password`) VALUES
 --
 
 --
+-- Индексы таблицы `about_classes`
+--
+ALTER TABLE `about_classes`
+  ADD PRIMARY KEY (`ID`);
+
+--
 -- Индексы таблицы `admin_users`
 --
 ALTER TABLE `admin_users`
@@ -144,10 +172,16 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT для таблицы `about_classes`
+--
+ALTER TABLE `about_classes`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
 -- AUTO_INCREMENT для таблицы `admin_users`
 --
 ALTER TABLE `admin_users`
-  MODIFY `id_user` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT для таблицы `student_users`
