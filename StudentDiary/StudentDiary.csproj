@@ -137,6 +137,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Student\AddNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\AddNoteForm.Designer.cs">
+      <DependentUpon>AddNoteForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Student\SubjectCardForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Admin\StudyGroupForm.resx">
       <DependentUpon>StudyGroupForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Student\AddNoteForm.resx">
+      <DependentUpon>AddNoteForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\SubjectCardForm.resx">
       <DependentUpon>SubjectCardForm.cs</DependentUpon>

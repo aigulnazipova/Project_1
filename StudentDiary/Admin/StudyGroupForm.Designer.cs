@@ -123,7 +123,7 @@
             this.btnDelete.BackColor = System.Drawing.Color.RosyBrown;
             this.btnDelete.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnDelete.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnDelete.Location = new System.Drawing.Point(25, 505);
+            this.btnDelete.Location = new System.Drawing.Point(25, 557);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(254, 50);
             this.btnDelete.TabIndex = 13;
@@ -136,7 +136,7 @@
             this.btnCreateStudent.BackColor = System.Drawing.Color.RosyBrown;
             this.btnCreateStudent.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnCreateStudent.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnCreateStudent.Location = new System.Drawing.Point(25, 447);
+            this.btnCreateStudent.Location = new System.Drawing.Point(25, 499);
             this.btnCreateStudent.Name = "btnCreateStudent";
             this.btnCreateStudent.Size = new System.Drawing.Size(254, 52);
             this.btnCreateStudent.TabIndex = 14;
