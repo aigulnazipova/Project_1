@@ -142,5 +142,45 @@ namespace StudentDiary
                 }
             }
         }
+        private void deleteRow()
+        {
+            int index = dgwStudyGroupInfo.CurrentCell.RowIndex;
+            dgwStudyGroupInfo.Rows[index].Visible = false;
+            if (dgwStudyGroupInfo.Rows[index].Cells[0].Value.ToString() == string.Empty)
+            {
+                dgwStudyGroupInfo.Rows[index].Cells[6].Value = RowState.Deleted;
+            }
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            deleteRow();
+
+            db.openConnection();
+            for (int index = 0; index < dgwStudyGroupInfo.Rows.Count; index++)
+            {
+                if (dgwStudyGroupInfo.Rows[index].Cells[6].Value != null)
+                {
+                    var rowState = (RowState)dgwStudyGroupInfo.Rows[index].Cells[6].Value;
+                    if (rowState == RowState.Exited)
+                        continue;
+                    if (rowState == RowState.Deleted)
+                    {
+                        var id = Convert.ToInt32(dgwStudyGroupInfo.Rows[index].Cells[0].Value);
+                        var deleteQuery = $" DELETE FROM `student_schedule` WHERE id = `{id}`";
+                        var command = new MySqlCommand(deleteQuery, db.getConnection());
+                        command.ExecuteNonQuery();
+
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Выберите строку!");
+                }
+
+            }
+            db.closeConnection();
+        }
     }
 }

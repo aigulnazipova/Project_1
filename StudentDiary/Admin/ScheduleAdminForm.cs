@@ -54,6 +54,7 @@ namespace StudentDiary.Admin
                 RefreshDataGridFiltered(selectedGroupNumber, selectedFaculty, selectedWeekDay, dgwAdminScheduleInfo);
             }
         }
+
         private void CreateColumns()
         {
             dgwAdminScheduleInfo.Columns.Add("id", "ID");
@@ -185,9 +186,9 @@ namespace StudentDiary.Admin
             db.openConnection();
             for (int index = 0; index < dgwAdminScheduleInfo.Rows.Count; index++)
             {
-                 var rowState = (RowState)dgwAdminScheduleInfo.Rows[index].Cells[6].Value;
                 if (dgwAdminScheduleInfo.Rows[index].Cells[6].Value != null)
                 {
+                    var rowState = (RowState)dgwAdminScheduleInfo.Rows[index].Cells[6].Value;
                     if (rowState == RowState.Exited)
                         continue;
                     if (rowState == RowState.Deleted)
@@ -201,7 +202,7 @@ namespace StudentDiary.Admin
                 }
                 else
                 {
-                    // Обработка случая, если значение ячейки равно null
+                    MessageBox.Show("Выберите строку!");
                 }
                 
             }
@@ -228,5 +229,7 @@ namespace StudentDiary.Admin
                 dataView.RowFilter = filter;
             }
         }
+
+        
     }
 }

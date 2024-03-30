@@ -35,7 +35,6 @@
             this.txtbChooseGroupNumber = new System.Windows.Forms.TextBox();
             this.cbGroupNumber = new System.Windows.Forms.ComboBox();
             this.dgwStudyGroupInfo = new System.Windows.Forms.DataGridView();
-            this.btnChangeInfo = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnCreateStudent = new System.Windows.Forms.Button();
             this.btnReturnBack = new System.Windows.Forms.Button();
@@ -119,18 +118,6 @@
             this.dgwStudyGroupInfo.Size = new System.Drawing.Size(1073, 536);
             this.dgwStudyGroupInfo.TabIndex = 7;
             // 
-            // btnChangeInfo
-            // 
-            this.btnChangeInfo.BackColor = System.Drawing.Color.RosyBrown;
-            this.btnChangeInfo.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnChangeInfo.ForeColor = System.Drawing.SystemColors.Control;
-            this.btnChangeInfo.Location = new System.Drawing.Point(25, 561);
-            this.btnChangeInfo.Name = "btnChangeInfo";
-            this.btnChangeInfo.Size = new System.Drawing.Size(254, 50);
-            this.btnChangeInfo.TabIndex = 8;
-            this.btnChangeInfo.Text = "Внести изменения";
-            this.btnChangeInfo.UseVisualStyleBackColor = false;
-            // 
             // btnDelete
             // 
             this.btnDelete.BackColor = System.Drawing.Color.RosyBrown;
@@ -142,6 +129,7 @@
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Удалить студента";
             this.btnDelete.UseVisualStyleBackColor = false;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnCreateStudent
             // 
@@ -177,7 +165,6 @@
             this.Controls.Add(this.btnReturnBack);
             this.Controls.Add(this.btnCreateStudent);
             this.Controls.Add(this.btnDelete);
-            this.Controls.Add(this.btnChangeInfo);
             this.Controls.Add(this.dgwStudyGroupInfo);
             this.Controls.Add(this.txtbChooseGroupNumber);
             this.Controls.Add(this.cbGroupNumber);
@@ -202,7 +189,6 @@
         private System.Windows.Forms.TextBox txtbChooseGroupNumber;
         private System.Windows.Forms.ComboBox cbGroupNumber;
         private System.Windows.Forms.DataGridView dgwStudyGroupInfo;
-        private System.Windows.Forms.Button btnChangeInfo;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCreateStudent;
         private System.Windows.Forms.Button btnReturnBack;
