@@ -1,6 +1,6 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Windows.Forms;;
+using System.Windows.Forms;
 
 namespace StudentDiary
 {
@@ -12,6 +12,7 @@ namespace StudentDiary
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
             var db = new DataBase();
+
 
             db.openConnection();
 

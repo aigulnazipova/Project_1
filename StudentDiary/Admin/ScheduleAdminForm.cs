@@ -21,6 +21,7 @@ namespace StudentDiary.Admin
             db = new DataBase();
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+
         }
         private void cbFaculty_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -184,17 +185,25 @@ namespace StudentDiary.Admin
             db.openConnection();
             for (int index = 0; index < dgwAdminScheduleInfo.Rows.Count; index++)
             {
-                var rowState = (RowState)dgwAdminScheduleInfo.Rows[index].Cells[6].Value;
-                if (rowState == RowState.Exited)
-                    continue;
-                if (rowState == RowState.Deleted)
+                 var rowState = (RowState)dgwAdminScheduleInfo.Rows[index].Cells[6].Value;
+                if (dgwAdminScheduleInfo.Rows[index].Cells[6].Value != null)
                 {
-                    var id = Convert.ToInt32(dgwAdminScheduleInfo.Rows[index].Cells[0].Value);
-                    var deleteQuery = $" DELETE FROM `student_schedule` WHERE id = `{id}`";
-                    var command = new MySqlCommand(deleteQuery, db.getConnection());
-                    command.ExecuteNonQuery();
+                    if (rowState == RowState.Exited)
+                        continue;
+                    if (rowState == RowState.Deleted)
+                    {
+                        var id = Convert.ToInt32(dgwAdminScheduleInfo.Rows[index].Cells[0].Value);
+                        var deleteQuery = $" DELETE FROM `student_schedule` WHERE id = `{id}`";
+                        var command = new MySqlCommand(deleteQuery, db.getConnection());
+                        command.ExecuteNonQuery();
 
+                    }
                 }
+                else
+                {
+                    // Обработка случая, если значение ячейки равно null
+                }
+                
             }
             db.closeConnection();
         }
@@ -204,6 +213,20 @@ namespace StudentDiary.Admin
             AdminForm adminForm = new AdminForm();
             adminForm.Show();
             this.Close();
+        }
+
+        private void ApplyFilters()
+        {
+            string faculty = cbFaculty.SelectedItem?.ToString();
+            string group_number = cbGroupNumber.SelectedItem?.ToString();
+            string week_day = cbWeekDay.SelectedItem?.ToString();
+
+            DataView dataView = dgwAdminScheduleInfo.DataSource as DataView;
+            if (dataView != null)
+            {
+                string filter = $"faculty = '{faculty}' AND group_number = '{group_number}' AND week_day = '{week_day}'";
+                dataView.RowFilter = filter;
+            }
         }
     }
 }

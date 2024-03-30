@@ -1,6 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
+using Mysqlx.Crud;
 using System;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace StudentDiary.Admin
 {
@@ -28,13 +30,7 @@ namespace StudentDiary.Admin
                 db.closeConnection();
                 return;
             }
-            int phone_number;
-            if (!int.TryParse(tbPhoneNumber.Text, out phone_number))
-            {
-                MessageBox.Show("Номер телефона должен быть числом!", "Ошибка!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                db.closeConnection();
-                return;
-            }
+            var phone_number = tbPhoneNumber.Text;
 
             var email = tbEmail.Text;
             var faculty = tbFaculty.Text;
@@ -46,13 +42,14 @@ namespace StudentDiary.Admin
                 return;
             }
             
-            string queryString = "INSERT INTO student_users (last_name, first_name, patronymic, birth_date, phone_number, email, faculty, group_number) VALUES (@last_name, @first_name, @patronymic, @birth_date, @phone_number, @email, @faculty, @group_number)";
+            string query = "INSERT INTO `users` (role) VALUES ('student')";
+            string queryString = "INSERT INTO student_users (id, last_name, first_name, patronymic, birth_date, phone_number, email, faculty, group_number) VALUES (id, @last_name, @first_name, @patronymic, @birth_date, @phone_number, @email, @faculty, @group_number)";
             MySqlCommand command = new MySqlCommand(queryString, db.getConnection());
             command.Parameters.Add("@last_name", MySqlDbType.VarChar).Value = last_name;
             command.Parameters.Add("@first_name", MySqlDbType.VarChar).Value = first_name;
             command.Parameters.Add("@patronymic", MySqlDbType.VarChar).Value = patronymic;
             command.Parameters.Add("@birth_date", MySqlDbType.Date).Value = birth_date;
-            command.Parameters.Add("@phone_number", MySqlDbType.Int32).Value = phone_number;
+            command.Parameters.Add("@phone_number", MySqlDbType.String).Value = phone_number;
             command.Parameters.Add("@email", MySqlDbType.VarChar).Value = email;
             command.Parameters.Add("@faculty", MySqlDbType.VarChar).Value = faculty;
             command.Parameters.Add("@group_number", MySqlDbType.Int32).Value = group_number;

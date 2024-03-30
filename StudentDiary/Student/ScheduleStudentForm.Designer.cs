@@ -44,13 +44,14 @@
             // 
             // dgwStudentScheduleInfo
             // 
+            this.dgwStudentScheduleInfo.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dgwStudentScheduleInfo.BackgroundColor = System.Drawing.SystemColors.ControlLight;
             this.dgwStudentScheduleInfo.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgwStudentScheduleInfo.Location = new System.Drawing.Point(21, 177);
+            this.dgwStudentScheduleInfo.Location = new System.Drawing.Point(29, 171);
             this.dgwStudentScheduleInfo.Name = "dgwStudentScheduleInfo";
             this.dgwStudentScheduleInfo.RowHeadersWidth = 51;
             this.dgwStudentScheduleInfo.RowTemplate.Height = 24;
-            this.dgwStudentScheduleInfo.Size = new System.Drawing.Size(905, 422);
+            this.dgwStudentScheduleInfo.Size = new System.Drawing.Size(879, 422);
             this.dgwStudentScheduleInfo.TabIndex = 0;
             // 
             // tbWeekDay
@@ -175,6 +176,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "ScheduleStudentForm";
             this.Text = "Расписание";
+            this.Load += new System.EventHandler(this.ScheduleStudentForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgwStudentScheduleInfo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbSchedule)).EndInit();
             this.ResumeLayout(false);

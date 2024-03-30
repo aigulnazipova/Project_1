@@ -81,11 +81,7 @@ namespace StudentDiary.Student
                 }
             }
         }
-        private void ScheduleStudentForm_Load(object sender, EventArgs e)
-        {
-            CreateColumns();
-            RefreshDataGrid(dgwStudentScheduleInfo);
-        }
+        
         private void RefreshDataGridFiltered(string selectedGroupNumber, string selectedFaculty, string selectedWeekDay, DataGridView dgw)
         {
             dgw.Rows.Clear();
@@ -115,6 +111,12 @@ namespace StudentDiary.Student
             StudentForm studentForm = new StudentForm();
             studentForm.Show();
             this.Close();
+        }
+
+        private void ScheduleStudentForm_Load(object sender, EventArgs e)
+        {
+            CreateColumns();
+            RefreshDataGrid(dgwStudentScheduleInfo);
         }
     }
 }
