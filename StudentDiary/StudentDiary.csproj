@@ -173,6 +173,12 @@
     <Compile Include="Admin\StudyGroupForm.Designer.cs">
       <DependentUpon>StudyGroupForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Student\WatchNoteForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Student\WatchNoteForm.Designer.cs">
+      <DependentUpon>WatchNoteForm.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Admin\AddStudentForm.resx">
       <DependentUpon>AddStudentForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -214,6 +220,10 @@
     <EmbeddedResource Include="Student\StudentForm.resx">
       <DependentUpon>StudentForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Student\WatchNoteForm.resx">
+      <DependentUpon>WatchNoteForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Bug report\Баг репорт.docx" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -235,7 +245,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="DB server\studentdiary %282%29.sql" />
+    <Content Include="DB server\studentdiary.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

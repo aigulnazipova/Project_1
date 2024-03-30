@@ -4,21 +4,19 @@ using System.Windows.Forms;
 
 namespace StudentDiary.Student
 {
-    public partial class AddNoteForm : Form
+    public partial class WatchNoteForm : Form
     {
-        public AddNoteForm()
+        public WatchNoteForm()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
         }
 
-        private void btnAddNote_Click(object sender, EventArgs e)
+        private void btnWatchNote_Click(object sender, EventArgs e)
         {
             string selectedValue = cbSubject.SelectedItem.ToString();
-            string textBoxValue = tbNote.Text;
-
             string connectionString = "server=localhost;port=3306;user=root;password=root;database=studentdiary";
-            string query = "INSERT INTO notes (subject, note) VALUES (@Subject, @Note)";
+            string query = "SELECT note FROM notes WHERE subject = @Subject";
 
             using (MySqlConnection connection = new MySqlConnection(connectionString))
             {
@@ -27,10 +25,19 @@ namespace StudentDiary.Student
                 using (MySqlCommand command = new MySqlCommand(query, connection))
                 {
                     command.Parameters.AddWithValue("@Subject", selectedValue);
-                    command.Parameters.AddWithValue("@Note", textBoxValue);
-                    command.ExecuteNonQuery();
 
-                    MessageBox.Show("Заметка добавлена");
+                    using (MySqlDataReader reader = command.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            string note = reader["note"].ToString();
+                            tbNote.Text = note;
+                        }
+                        else
+                        {
+                            tbNote.Text = "Нет заметок к этому предмету.";
+                        }
+                    }
                 }
             }
         }

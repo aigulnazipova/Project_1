@@ -70,7 +70,8 @@ namespace StudentDiary.Student
 
         private void btnWatchNote_Click(object sender, EventArgs e)
         {
-            
+            WatchNoteForm watchNoteForm = new WatchNoteForm();
+            watchNoteForm.Show();
         }
     }
 }

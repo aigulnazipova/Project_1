@@ -67,6 +67,10 @@ namespace StudentDiary
                     this.Hide();
                 }
             }
+            else
+            {
+                MessageBox.Show("Неправильное имя пользователя и пароль!");
+            }
             
 
         }
