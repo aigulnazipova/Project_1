@@ -18,7 +18,7 @@ namespace StudentDiary
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ScheduleAdminForm());
+            Application.Run(new LoginForm());
         }
     }
 }

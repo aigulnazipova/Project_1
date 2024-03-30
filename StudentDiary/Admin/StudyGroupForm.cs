@@ -1,16 +1,8 @@
 ﻿using MySql.Data.MySqlClient;
 using StudentDiary.Admin;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace StudentDiary
 {
@@ -22,6 +14,7 @@ namespace StudentDiary
             db = new DataBase();
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
+            dgwStudyGroupInfo.CellFormatting += dgwStudyGroupInfo_CellFormatting;
         }
         private void btnCloseStudyGroupForm_Click(object sender, EventArgs e)
         {
@@ -50,7 +43,7 @@ namespace StudentDiary
         }
         private void ReadSingleRow(DataGridView dgw, IDataRecord record)
         {
-            dgw.Rows.Add(record.GetInt32(0), record.GetString(1), record.GetString(2), record.GetString(3), record.GetDateTime(4), record.GetInt32(5), record.GetString(6), record.GetString(7), record.GetInt32(8));
+            dgw.Rows.Add(record.GetInt32(0), record.GetString(1), record.GetString(2), record.GetString(3), record.GetDateTime(4), record.GetInt64(5), record.GetString(6), record.GetString(7), record.GetInt32(8));
         }
 
         private void RefreshDataGrid(DataGridView dgw)
@@ -129,6 +122,25 @@ namespace StudentDiary
         {
             AddStudentForm addStudentForm = new AddStudentForm();
             addStudentForm.Show();
+        }
+
+        private void btnReturnBack_Click(object sender, EventArgs e)
+        {
+            AdminForm adminForm = new AdminForm();
+            adminForm.Show();
+            this.Close();
+        }
+        
+        private void dgwStudyGroupInfo_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
+        {
+            if (e.ColumnIndex == 4) 
+            {
+                if (e.Value is DateTime)
+                {
+                    e.Value = ((DateTime)e.Value).ToShortDateString();
+                    e.FormattingApplied = true;
+                }
+            }
         }
     }
 }

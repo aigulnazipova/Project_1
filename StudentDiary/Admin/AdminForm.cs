@@ -1,11 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using StudentDiary.Admin;
+using System;
 using System.Windows.Forms;
 
 namespace StudentDiary
@@ -42,6 +36,20 @@ namespace StudentDiary
         {
             LoginForm loginForm = new LoginForm();
             loginForm.Show();
+            this.Close();
+        }
+
+        private void btnScheduleAdminForm_Click(object sender, EventArgs e)
+        {
+            ScheduleAdminForm scheduleAdminForm = new ScheduleAdminForm();
+            scheduleAdminForm.Show();
+            this.Close();
+        }
+
+        private void btnGiveGrade_Click(object sender, EventArgs e)
+        {
+            GiveGradeForm giveGradeForm = new GiveGradeForm();
+            giveGradeForm.Show();
             this.Close();
         }
     }

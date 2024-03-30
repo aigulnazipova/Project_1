@@ -38,13 +38,13 @@
             this.btnReturnBack = new System.Windows.Forms.Button();
             this.pb = new System.Windows.Forms.PictureBox();
             this.btnSaveChanges = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.lblBirthDate = new System.Windows.Forms.Label();
+            this.lblState = new System.Windows.Forms.Label();
+            this.lblPatronymic = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.lblLastName = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pb)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,75 +145,75 @@
             this.btnSaveChanges.Text = "Сохранить изменения";
             this.btnSaveChanges.UseVisualStyleBackColor = false;
             // 
-            // label5
+            // lblEmail
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(17, 480);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(227, 29);
-            this.label5.TabIndex = 31;
-            this.label5.Text = "Электронная почта";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblEmail.Location = new System.Drawing.Point(17, 480);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(227, 29);
+            this.lblEmail.TabIndex = 31;
+            this.lblEmail.Text = "Электронная почта";
             // 
-            // label6
+            // lblPhoneNumber
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(17, 409);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(188, 29);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Номер телефона";
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPhoneNumber.Location = new System.Drawing.Point(17, 409);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(188, 29);
+            this.lblPhoneNumber.TabIndex = 30;
+            this.lblPhoneNumber.Text = "Номер телефона";
             // 
-            // label7
+            // lblBirthDate
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(17, 341);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(181, 29);
-            this.label7.TabIndex = 29;
-            this.label7.Text = "Дата рождения";
+            this.lblBirthDate.AutoSize = true;
+            this.lblBirthDate.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblBirthDate.Location = new System.Drawing.Point(17, 341);
+            this.lblBirthDate.Name = "lblBirthDate";
+            this.lblBirthDate.Size = new System.Drawing.Size(181, 29);
+            this.lblBirthDate.TabIndex = 29;
+            this.lblBirthDate.Text = "Дата рождения";
             // 
-            // label4
+            // lblState
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(368, 98);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(207, 58);
-            this.label4.TabIndex = 28;
-            this.label4.Text = "Статус: студент\r\n\r\n";
+            this.lblState.AutoSize = true;
+            this.lblState.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblState.Location = new System.Drawing.Point(368, 98);
+            this.lblState.Name = "lblState";
+            this.lblState.Size = new System.Drawing.Size(207, 58);
+            this.lblState.TabIndex = 28;
+            this.lblState.Text = "Статус: студент\r\n\r\n";
             // 
-            // label3
+            // lblPatronymic
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(17, 267);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(121, 29);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "Отчество";
+            this.lblPatronymic.AutoSize = true;
+            this.lblPatronymic.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPatronymic.Location = new System.Drawing.Point(17, 267);
+            this.lblPatronymic.Name = "lblPatronymic";
+            this.lblPatronymic.Size = new System.Drawing.Size(121, 29);
+            this.lblPatronymic.TabIndex = 27;
+            this.lblPatronymic.Text = "Отчество";
             // 
-            // label2
+            // lblFirstName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(17, 196);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(57, 29);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "Имя";
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFirstName.Location = new System.Drawing.Point(17, 196);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(57, 29);
+            this.lblFirstName.TabIndex = 26;
+            this.lblFirstName.Text = "Имя";
             // 
-            // label1
+            // lblLastName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(17, 125);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(106, 29);
-            this.label1.TabIndex = 25;
-            this.label1.Text = "Фамилия";
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Font = new System.Drawing.Font("Sitka Small", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblLastName.Location = new System.Drawing.Point(17, 125);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(106, 29);
+            this.lblLastName.TabIndex = 25;
+            this.lblLastName.Text = "Фамилия";
             // 
             // StudentAccountForm
             // 
@@ -229,13 +229,13 @@
             this.Controls.Add(this.btnReturnBack);
             this.Controls.Add(this.pb);
             this.Controls.Add(this.btnSaveChanges);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.lblPhoneNumber);
+            this.Controls.Add(this.lblBirthDate);
+            this.Controls.Add(this.lblState);
+            this.Controls.Add(this.lblPatronymic);
+            this.Controls.Add(this.lblFirstName);
+            this.Controls.Add(this.lblLastName);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "StudentAccountForm";
             this.Text = "Личный кабинет";
@@ -256,12 +256,12 @@
         private System.Windows.Forms.Button btnReturnBack;
         private System.Windows.Forms.PictureBox pb;
         private System.Windows.Forms.Button btnSaveChanges;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblPhoneNumber;
+        private System.Windows.Forms.Label lblBirthDate;
+        private System.Windows.Forms.Label lblState;
+        private System.Windows.Forms.Label lblPatronymic;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.Label lblLastName;
     }
 }

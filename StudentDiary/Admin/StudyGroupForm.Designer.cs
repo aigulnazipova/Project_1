@@ -38,6 +38,7 @@
             this.btnChangeInfo = new System.Windows.Forms.Button();
             this.btnDelete = new System.Windows.Forms.Button();
             this.btnCreateStudent = new System.Windows.Forms.Button();
+            this.btnReturnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pbStudyGroup)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgwStudyGroupInfo)).BeginInit();
             this.SuspendLayout();
@@ -155,11 +156,25 @@
             this.btnCreateStudent.UseVisualStyleBackColor = false;
             this.btnCreateStudent.Click += new System.EventHandler(this.btnCreateStudent_Click);
             // 
+            // btnReturnBack
+            // 
+            this.btnReturnBack.BackColor = System.Drawing.Color.IndianRed;
+            this.btnReturnBack.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnReturnBack.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnReturnBack.Location = new System.Drawing.Point(1283, 1);
+            this.btnReturnBack.Name = "btnReturnBack";
+            this.btnReturnBack.Size = new System.Drawing.Size(94, 34);
+            this.btnReturnBack.TabIndex = 15;
+            this.btnReturnBack.Text = "Назад";
+            this.btnReturnBack.UseVisualStyleBackColor = false;
+            this.btnReturnBack.Click += new System.EventHandler(this.btnReturnBack_Click);
+            // 
             // StudyGroupForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1377, 638);
+            this.Controls.Add(this.btnReturnBack);
             this.Controls.Add(this.btnCreateStudent);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnChangeInfo);
@@ -190,5 +205,6 @@
         private System.Windows.Forms.Button btnChangeInfo;
         private System.Windows.Forms.Button btnDelete;
         private System.Windows.Forms.Button btnCreateStudent;
+        private System.Windows.Forms.Button btnReturnBack;
     }
 }

@@ -135,14 +135,13 @@
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="PersonalData.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Student\AboutClassForm.cs">
+    <Compile Include="Student\SubjectCardForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Student\AboutClassForm.Designer.cs">
-      <DependentUpon>AboutClassForm.cs</DependentUpon>
+    <Compile Include="Student\SubjectCardForm.Designer.cs">
+      <DependentUpon>SubjectCardForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Student\ScheduleStudentForm.cs">
       <SubType>Form</SubType>
@@ -194,8 +193,8 @@
     <EmbeddedResource Include="Admin\StudyGroupForm.resx">
       <DependentUpon>StudyGroupForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Student\AboutClassForm.resx">
-      <DependentUpon>AboutClassForm.cs</DependentUpon>
+    <EmbeddedResource Include="Student\SubjectCardForm.resx">
+      <DependentUpon>SubjectCardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Student\ScheduleStudentForm.resx">
       <DependentUpon>ScheduleStudentForm.cs</DependentUpon>

@@ -33,7 +33,7 @@
             this.cbFaculty = new System.Windows.Forms.ComboBox();
             this.txtbChooseGroupNumber = new System.Windows.Forms.TextBox();
             this.cbGroupNumber = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbAddClass = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
@@ -50,6 +50,7 @@
             this.textBox8 = new System.Windows.Forms.TextBox();
             this.cbWeekDay = new System.Windows.Forms.ComboBox();
             this.btnDeleteRow = new System.Windows.Forms.Button();
+            this.btnReturnBack = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgwAdminScheduleInfo)).BeginInit();
             this.SuspendLayout();
             // 
@@ -118,18 +119,18 @@
             this.cbGroupNumber.Size = new System.Drawing.Size(170, 24);
             this.cbGroupNumber.TabIndex = 7;
             // 
-            // textBox1
+            // tbAddClass
             // 
-            this.textBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.Font = new System.Drawing.Font("Sitka Small", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.textBox1.Location = new System.Drawing.Point(21, 7);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(346, 35);
-            this.textBox1.TabIndex = 9;
-            this.textBox1.Text = "Добавить занятие";
+            this.tbAddClass.BackColor = System.Drawing.SystemColors.Control;
+            this.tbAddClass.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbAddClass.Font = new System.Drawing.Font("Sitka Small", 16.2F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.tbAddClass.Location = new System.Drawing.Point(21, 7);
+            this.tbAddClass.Multiline = true;
+            this.tbAddClass.Name = "tbAddClass";
+            this.tbAddClass.ReadOnly = true;
+            this.tbAddClass.Size = new System.Drawing.Size(346, 35);
+            this.tbAddClass.TabIndex = 9;
+            this.tbAddClass.Text = "Добавить занятие";
             // 
             // textBox2
             // 
@@ -325,11 +326,25 @@
             this.btnDeleteRow.UseVisualStyleBackColor = false;
             this.btnDeleteRow.Click += new System.EventHandler(this.btnDeleteRow_Click);
             // 
+            // btnReturnBack
+            // 
+            this.btnReturnBack.BackColor = System.Drawing.Color.IndianRed;
+            this.btnReturnBack.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnReturnBack.ForeColor = System.Drawing.SystemColors.Window;
+            this.btnReturnBack.Location = new System.Drawing.Point(1070, 7);
+            this.btnReturnBack.Name = "btnReturnBack";
+            this.btnReturnBack.Size = new System.Drawing.Size(94, 34);
+            this.btnReturnBack.TabIndex = 30;
+            this.btnReturnBack.Text = "Назад";
+            this.btnReturnBack.UseVisualStyleBackColor = false;
+            this.btnReturnBack.Click += new System.EventHandler(this.btnReturnBack_Click);
+            // 
             // ScheduleAdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1165, 638);
+            this.Controls.Add(this.btnReturnBack);
             this.Controls.Add(this.btnDeleteRow);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.cbWeekDay);
@@ -346,7 +361,7 @@
             this.Controls.Add(this.textBox4);
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.tbAddClass);
             this.Controls.Add(this.txtbChooseGroupNumber);
             this.Controls.Add(this.cbGroupNumber);
             this.Controls.Add(this.txtbChooseFaculty);
@@ -369,7 +384,7 @@
         private System.Windows.Forms.ComboBox cbFaculty;
         private System.Windows.Forms.TextBox txtbChooseGroupNumber;
         private System.Windows.Forms.ComboBox cbGroupNumber;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbAddClass;
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.TextBox textBox4;
@@ -386,5 +401,6 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.ComboBox cbWeekDay;
         private System.Windows.Forms.Button btnDeleteRow;
+        private System.Windows.Forms.Button btnReturnBack;
     }
 }

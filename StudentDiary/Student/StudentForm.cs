@@ -1,12 +1,5 @@
 ﻿using StudentDiary.Student;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace StudentDiary
@@ -35,7 +28,7 @@ namespace StudentDiary
 
         private void btnAboutClass_Click(object sender, EventArgs e)
         {
-            AboutClassForm aboutClassForm = new AboutClassForm();
+            SubjectCardForm aboutClassForm = new SubjectCardForm();
             aboutClassForm.Show();
             this.Close();
         }

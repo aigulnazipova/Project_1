@@ -36,14 +36,14 @@
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.tbFaculty = new System.Windows.Forms.TextBox();
             this.tbGroupNumber = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
+            this.lblLastName = new System.Windows.Forms.Label();
+            this.lblFirstName = new System.Windows.Forms.Label();
+            this.lblPatronymic = new System.Windows.Forms.Label();
+            this.lblBirthDate = new System.Windows.Forms.Label();
+            this.lblPhoneNumber = new System.Windows.Forms.Label();
+            this.lblEmail = new System.Windows.Forms.Label();
+            this.lblFaculty = new System.Windows.Forms.Label();
+            this.lblGroupNumber = new System.Windows.Forms.Label();
             this.btnSave = new System.Windows.Forms.Button();
             this.tbBirthDate = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
@@ -116,85 +116,85 @@
             this.tbGroupNumber.Size = new System.Drawing.Size(305, 32);
             this.tbGroupNumber.TabIndex = 8;
             // 
-            // label1
+            // lblLastName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(130, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(95, 26);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Фамилия";
+            this.lblLastName.AutoSize = true;
+            this.lblLastName.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblLastName.Location = new System.Drawing.Point(130, 80);
+            this.lblLastName.Name = "lblLastName";
+            this.lblLastName.Size = new System.Drawing.Size(95, 26);
+            this.lblLastName.TabIndex = 9;
+            this.lblLastName.Text = "Фамилия";
             // 
-            // label2
+            // lblFirstName
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(172, 128);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(53, 26);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Имя";
+            this.lblFirstName.AutoSize = true;
+            this.lblFirstName.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFirstName.Location = new System.Drawing.Point(172, 128);
+            this.lblFirstName.Name = "lblFirstName";
+            this.lblFirstName.Size = new System.Drawing.Size(53, 26);
+            this.lblFirstName.TabIndex = 10;
+            this.lblFirstName.Text = "Имя";
             // 
-            // label3
+            // lblPatronymic
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(116, 177);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(109, 26);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Отчество";
+            this.lblPatronymic.AutoSize = true;
+            this.lblPatronymic.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPatronymic.Location = new System.Drawing.Point(116, 177);
+            this.lblPatronymic.Name = "lblPatronymic";
+            this.lblPatronymic.Size = new System.Drawing.Size(109, 26);
+            this.lblPatronymic.TabIndex = 11;
+            this.lblPatronymic.Text = "Отчество";
             // 
-            // label4
+            // lblBirthDate
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(64, 228);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(161, 26);
-            this.label4.TabIndex = 12;
-            this.label4.Text = "Дата рождения";
+            this.lblBirthDate.AutoSize = true;
+            this.lblBirthDate.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblBirthDate.Location = new System.Drawing.Point(64, 228);
+            this.lblBirthDate.Name = "lblBirthDate";
+            this.lblBirthDate.Size = new System.Drawing.Size(161, 26);
+            this.lblBirthDate.TabIndex = 12;
+            this.lblBirthDate.Text = "Дата рождения";
             // 
-            // label5
+            // lblPhoneNumber
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(53, 281);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(172, 26);
-            this.label5.TabIndex = 13;
-            this.label5.Text = "Номер телефона";
+            this.lblPhoneNumber.AutoSize = true;
+            this.lblPhoneNumber.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblPhoneNumber.Location = new System.Drawing.Point(53, 281);
+            this.lblPhoneNumber.Name = "lblPhoneNumber";
+            this.lblPhoneNumber.Size = new System.Drawing.Size(172, 26);
+            this.lblPhoneNumber.TabIndex = 13;
+            this.lblPhoneNumber.Text = "Номер телефона";
             // 
-            // label6
+            // lblEmail
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(149, 329);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(76, 26);
-            this.label6.TabIndex = 14;
-            this.label6.Text = "Почта";
+            this.lblEmail.AutoSize = true;
+            this.lblEmail.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblEmail.Location = new System.Drawing.Point(149, 329);
+            this.lblEmail.Name = "lblEmail";
+            this.lblEmail.Size = new System.Drawing.Size(76, 26);
+            this.lblEmail.TabIndex = 14;
+            this.lblEmail.Text = "Почта";
             // 
-            // label7
+            // lblFaculty
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(94, 377);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(131, 26);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Направление";
+            this.lblFaculty.AutoSize = true;
+            this.lblFaculty.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblFaculty.Location = new System.Drawing.Point(94, 377);
+            this.lblFaculty.Name = "lblFaculty";
+            this.lblFaculty.Size = new System.Drawing.Size(131, 26);
+            this.lblFaculty.TabIndex = 15;
+            this.lblFaculty.Text = "Направление";
             // 
-            // label8
+            // lblGroupNumber
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(79, 431);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(146, 26);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "Номер группы";
+            this.lblGroupNumber.AutoSize = true;
+            this.lblGroupNumber.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblGroupNumber.Location = new System.Drawing.Point(79, 431);
+            this.lblGroupNumber.Name = "lblGroupNumber";
+            this.lblGroupNumber.Size = new System.Drawing.Size(146, 26);
+            this.lblGroupNumber.TabIndex = 16;
+            this.lblGroupNumber.Text = "Номер группы";
             // 
             // btnSave
             // 
@@ -224,14 +224,14 @@
             this.ClientSize = new System.Drawing.Size(617, 596);
             this.Controls.Add(this.tbBirthDate);
             this.Controls.Add(this.btnSave);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblGroupNumber);
+            this.Controls.Add(this.lblFaculty);
+            this.Controls.Add(this.lblEmail);
+            this.Controls.Add(this.lblPhoneNumber);
+            this.Controls.Add(this.lblBirthDate);
+            this.Controls.Add(this.lblPatronymic);
+            this.Controls.Add(this.lblFirstName);
+            this.Controls.Add(this.lblLastName);
             this.Controls.Add(this.tbGroupNumber);
             this.Controls.Add(this.tbFaculty);
             this.Controls.Add(this.tbEmail);
@@ -258,14 +258,14 @@
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.TextBox tbFaculty;
         private System.Windows.Forms.TextBox tbGroupNumber;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label lblLastName;
+        private System.Windows.Forms.Label lblFirstName;
+        private System.Windows.Forms.Label lblPatronymic;
+        private System.Windows.Forms.Label lblBirthDate;
+        private System.Windows.Forms.Label lblPhoneNumber;
+        private System.Windows.Forms.Label lblEmail;
+        private System.Windows.Forms.Label lblFaculty;
+        private System.Windows.Forms.Label lblGroupNumber;
         private System.Windows.Forms.Button btnSave;
         private System.Windows.Forms.TextBox tbBirthDate;
     }

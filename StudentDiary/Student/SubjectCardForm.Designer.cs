@@ -1,6 +1,6 @@
-﻿namespace StudentDiary.Admin
+﻿namespace StudentDiary.Student
 {
-    partial class GiveGradeForm
+    partial class SubjectCardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,53 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GiveGradeForm));
-            this.pbGiveGrade = new System.Windows.Forms.PictureBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SubjectCardForm));
+            this.tb_note = new System.Windows.Forms.RichTextBox();
+            this.pbAboutClass = new System.Windows.Forms.PictureBox();
             this.btnReturnBack = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pbGiveGrade)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAboutClass)).BeginInit();
             this.SuspendLayout();
             // 
-            // pbGiveGrade
+            // tb_note
             // 
-            this.pbGiveGrade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(224)))), ((int)(((byte)(215)))));
-            this.pbGiveGrade.Image = ((System.Drawing.Image)(resources.GetObject("pbGiveGrade.Image")));
-            this.pbGiveGrade.Location = new System.Drawing.Point(51, 41);
-            this.pbGiveGrade.Name = "pbGiveGrade";
-            this.pbGiveGrade.Size = new System.Drawing.Size(438, 159);
-            this.pbGiveGrade.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbGiveGrade.TabIndex = 0;
-            this.pbGiveGrade.TabStop = false;
+            this.tb_note.Location = new System.Drawing.Point(12, 110);
+            this.tb_note.Name = "tb_note";
+            this.tb_note.Size = new System.Drawing.Size(458, 515);
+            this.tb_note.TabIndex = 0;
+            this.tb_note.Text = "";
+            // 
+            // pbAboutClass
+            // 
+            this.pbAboutClass.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(224)))), ((int)(((byte)(215)))));
+            this.pbAboutClass.Image = ((System.Drawing.Image)(resources.GetObject("pbAboutClass.Image")));
+            this.pbAboutClass.Location = new System.Drawing.Point(12, 4);
+            this.pbAboutClass.Name = "pbAboutClass";
+            this.pbAboutClass.Size = new System.Drawing.Size(458, 72);
+            this.pbAboutClass.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbAboutClass.TabIndex = 1;
+            this.pbAboutClass.TabStop = false;
             // 
             // btnReturnBack
             // 
             this.btnReturnBack.BackColor = System.Drawing.Color.IndianRed;
             this.btnReturnBack.Font = new System.Drawing.Font("Sitka Small", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnReturnBack.ForeColor = System.Drawing.SystemColors.Window;
-            this.btnReturnBack.Location = new System.Drawing.Point(453, 1);
+            this.btnReturnBack.Location = new System.Drawing.Point(665, 4);
             this.btnReturnBack.Name = "btnReturnBack";
             this.btnReturnBack.Size = new System.Drawing.Size(94, 34);
-            this.btnReturnBack.TabIndex = 6;
+            this.btnReturnBack.TabIndex = 16;
             this.btnReturnBack.Text = "Назад";
             this.btnReturnBack.UseVisualStyleBackColor = false;
             this.btnReturnBack.Click += new System.EventHandler(this.btnReturnBack_Click);
             // 
-            // GiveGradeForm
+            // SubjectCardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(546, 627);
+            this.ClientSize = new System.Drawing.Size(759, 637);
             this.Controls.Add(this.btnReturnBack);
-            this.Controls.Add(this.pbGiveGrade);
+            this.Controls.Add(this.pbAboutClass);
+            this.Controls.Add(this.tb_note);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "GiveGradeForm";
-            ((System.ComponentModel.ISupportInitialize)(this.pbGiveGrade)).EndInit();
+            this.Name = "SubjectCardForm";
+            ((System.ComponentModel.ISupportInitialize)(this.pbAboutClass)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pbGiveGrade;
+        private System.Windows.Forms.RichTextBox tb_note;
+        private System.Windows.Forms.PictureBox pbAboutClass;
         private System.Windows.Forms.Button btnReturnBack;
     }
 }

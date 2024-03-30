@@ -1,12 +1,5 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace StudentDiary.Student
@@ -66,8 +59,8 @@ namespace StudentDiary.Student
 
         private void btnReturnBack_Click(object sender, EventArgs e)
         {
-            LoginForm loginForm = new LoginForm();
-            loginForm.Show();
+            StudentForm studentForm = new StudentForm();
+            studentForm.Show();
             this.Close();
         }
     }
