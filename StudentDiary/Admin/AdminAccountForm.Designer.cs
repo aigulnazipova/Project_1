@@ -130,6 +130,7 @@
             this.btnSaveChanges.TabIndex = 16;
             this.btnSaveChanges.Text = "Сохранить изменения";
             this.btnSaveChanges.UseVisualStyleBackColor = false;
+            this.btnSaveChanges.Click += new System.EventHandler(this.btnSaveChanges_Click);
             // 
             // pbAdminAccount
             // 

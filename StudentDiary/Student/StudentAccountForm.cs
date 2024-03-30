@@ -6,12 +6,11 @@ namespace StudentDiary.Student
 {
     public partial class StudentAccountForm : Form
     {
-        private DataBase db;
+        DataBase db = new DataBase();
         public StudentAccountForm()
         {
             InitializeComponent();
             StartPosition = FormStartPosition.CenterScreen;
-            var db = new DataBase();
 
             db.openConnection();
 
@@ -33,6 +32,14 @@ namespace StudentDiary.Student
 
             db.closeConnection();
         }
+
+        private void btnReturnBack_Click(object sender, EventArgs e)
+        {
+            StudentForm studentForm = new StudentForm();
+            studentForm.Show();
+            this.Close();
+        }
+
         private void btnSaveChanges_Click(object sender, EventArgs e)
         {
             if (string.IsNullOrEmpty(tbLastName.Text) || string.IsNullOrEmpty(tbFirstName.Text) || string.IsNullOrEmpty(tbPatronymic.Text) || string.IsNullOrEmpty(tbBirthDate.Text) || string.IsNullOrEmpty(tbPhoneNumber.Text) || string.IsNullOrEmpty(tbEmail.Text))
@@ -55,13 +62,6 @@ namespace StudentDiary.Student
             {
                 MessageBox.Show("Действие было отменено!", "Уведомление", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-        }
-
-        private void btnReturnBack_Click(object sender, EventArgs e)
-        {
-            StudentForm studentForm = new StudentForm();
-            studentForm.Show();
-            this.Close();
         }
     }
 }
